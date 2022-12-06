@@ -1,4 +1,4 @@
 # m123
 
 # Inhaltsverzeichnis
- 1. [dhco](/dhcp/)
+ 1. [dhcp](/dhcp/)
