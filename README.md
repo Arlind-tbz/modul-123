@@ -1,4 +1,5 @@
 # m123
 
 # Inhaltsverzeichnis
- 1. [dhcp](/dhcp/)
+ 1. [DHCP in Linux](/praktisch1/)
+ 2. [DHCP in Winodws](/praktisch2/)

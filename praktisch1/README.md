@@ -1,4 +1,4 @@
-# DHCP Server einrichten
+# DHCP Server einrichten in Linux
 
 ## Vorbereitung
 
@@ -7,12 +7,12 @@
 3. sudo apt-get upgrade
 4. sudo apt install open-vm-tools
 Sobald man dies hat, sollte man neu starten mit `Sudo reboot` <br>
-![Sudo apt-get update](/dhcp/images/Bild1.png) <br>
-![Sudo apt-get upgrade](/dhcp/images/Bild2.png) <br>
-![sudo apt install open-vm-tools](/dhcp/images/Bild3.png) <br>
+![Sudo apt-get update](images/Bild1.png) <br>
+![Sudo apt-get upgrade](images/Bild2.png) <br>
+![sudo apt install open-vm-tools](images/Bild3.png) <br>
 
 Wir brauchen 2 verschiedene Netzwerk Interfaces. 1x Host only und 1x NAT <br>
-![Netzwerk Adapter](/dhcp/images/Bild4.png)
+![Netzwerk Adapter](images/Bild4.png)
 ## Konfiguration DHCP
 
 1. Wir installieren den DHCP-Dienst mit `sudo apt install isc-dhcp-server` runter.
@@ -20,19 +20,19 @@ Wir brauchen 2 verschiedene Netzwerk Interfaces. 1x Host only und 1x NAT <br>
 3. Damit falls wir fehler machen unsere originale Datei zurückbringen können müssen wir `cp dhcpd.conf dhcpd.conf.cp`.
 4. Jetzt editieren wir die dhcpd.conf Datei mit `sudo nano dhcpd.conf`.
 5. In Dieser Datei müssen wir das # von #Authorative; entfernen. <br>
-![authorative](/dhcp/images/Bild5.png)
+![authorative](images/Bild5.png)
 6. Und die IP-Range anpassen und auch wieder die Comments entfernen. <br>
-![IP-Range](/dhcp/images/Bild6.png)
+![IP-Range](images/Bild6.png)
 7. Jetzt müssen wir den Netzwerk Adapter überprüfen und sich den Host only Adapter merken. In meinem Fall ens37. <br>
-![ens37](/dhcp/images/Bild8.png)
+![ens37](images/Bild8.png)
 8. Jetzt müssen wir diesen Adapter in `/etc/default/isc-dhcp-server` einfügen mit `sudo nano /etc/default/isc-dhcp-server` <br>
-![ipv4fix](/dhcp/images/Bild10.png)
+![ipv4fix](images/Bild10.png)
 
 ## Fixe IP-Adresse konfigurieren
 1. Die IP Konfiguration ist im Pfad `/etc/netplan/`
 2. Und hier erstellen wir eine Datei, bei der wir unsere Einstellungen speichern mit `sudo touch 01-netcfg.yaml`
 3. Diese Datei müssen wir jetzt auch editieren mit `sudo nano 01-netcfg.yaml` <br>
-![netcfg](/dhcp/images/Bild11.png) <br>
+![netcfg](images/Bild11.png) <br>
 Sobald wir dies haben, haben wir eine fixe IP-Adresse auf dem Adapter ens37.
 ## Testen
 
@@ -41,6 +41,6 @@ Sobald wir dies haben, haben wir eine fixe IP-Adresse auf dem Adapter ens37.
 3. In der Windows VM müssen wir jetzt cmd öffnen.
 4. In cmd geben wir jetzt den Command `ipconfig /renew` <br>
 Jetzt sollten wir unsere IP-Adresse erneuern, und dies sollte es durch den DHCP-Dienst machen. <br>
-![cmd](/dhcp/images/Bild12.png)
+![cmd](images/Bild12.png)
 5. Der letzte Test ist es in der Ubuntu Server VM den Command `dhcp-lease-list` einzugeben, und wenn es einen Eintrag gibt, funktioniert der Dienst. <br>
-![dhcp-lease-list](/dhcp/images/Bild13.png)
+![dhcp-lease-list](images/Bild13.png)
