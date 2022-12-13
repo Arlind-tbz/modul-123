@@ -48,3 +48,5 @@
   - kein Gateway
   - 192.168.100.4
   - 8.8.8.8
+
+3. In "View Advanced system settings" den Hostnamen einsellen: in meinem Fall WinServer
