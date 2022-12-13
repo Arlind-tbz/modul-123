@@ -25,14 +25,11 @@
 1. Language: English
 2. Time and Currency Format: Swiss German
 3. Keyboard Layout: US-International
-
-
 4. I don't have a product key
 5. Windows Server 2019 Standard (Desktop Experience)
 6. Accept License Agreement
 7. Custom
 8. Ganze Disk auswählen
-
 9. Nachdem Restart solltest du jetzt ein Passwort eingeben, in meinem Fall: Arlind123!
 
 
