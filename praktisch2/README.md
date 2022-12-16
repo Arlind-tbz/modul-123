@@ -1,4 +1,4 @@
-# DHCP Server einrichten in Windows
+# DNS/DHCP Server einrichten in Windows
 
 ## Vorbereitung
 
