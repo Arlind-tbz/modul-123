@@ -1,7 +1,5 @@
 # DNS Server einrichten in Windows
 
-## Vorbereitung
-
 ### Windows Server 2019 Englisch installieren
 
 1. Custom
@@ -20,7 +18,7 @@
 14. WindowsServer.vmdk
 15. Windows Server CD hinzufügen
 
-#### Normale Windows Server installation
+### Normale Windows Server installation
 
 1. Language: English
 2. Time and Currency Format: Swiss German
@@ -32,13 +30,12 @@
 8. Ganze Disk auswählen
 9. Nachdem Restart solltest du jetzt ein Passwort eingeben, in meinem Fall: Arlind123!
 
-
-#### DHCP Server einrichten in Windows Server
+### DHCP Server einrichten in Windows Server
 
 1. VMware Tools installieren, wie in Windows 10 und neustarten.
 
 
-##### Fixe IP Verteilen und Hostnamen angeben.
+### Fixe IP Verteilen und Hostnamen angeben.
 2. Fixe IP in Adapter Optionen einstellen
   - 192.168.100.4
   - 255.255.255.0
@@ -48,7 +45,7 @@
 
 3. In "View Advanced system settings" den Hostnamen einsellen: in meinem Fall WinServer
 
-##### DNS Rolle am Windows Server vergeben
+### DNS Rolle am Windows Server vergeben
 1. Im Server Manager müssen wir "2. add roles and features" anklicken. <br>
 ![config](images/config.png)
 2. Next
@@ -61,7 +58,7 @@
 8. Install
 9. Sobald der Download fertig ist wählen wir "Close"
 
-##### DNS Server Konfigurieren 1
+### DNS Server Konfigurieren 1
 1. Sobald wir dies haben gehen wir in Server Manager in "Tools" und nach DNS <br>
 ![tools](images/tools.png)
 2. Und führe einen rechtsklick auf deinen Windows Server aus <br>
@@ -71,14 +68,14 @@
 5. Nenne es etwas cooles, z.B. sulejmani.local
 6. Do not allow dynamic updates
 
-##### Linux
+### Linux
 1. Starte jetzt deinen Linux DHCP Server
 2. `sudo nano /etc/netplan/01-netcfg.yaml`
 ![netplan](images/netplan.png)
 3. mit `resolvectl status` solltest du jetzt deine momentane DNS Server sehen
 4. `sudo nano /etc/dhcp/dhcpd.conf` <br>
 ![dhcp](images/dhcp.png)
-##### DNS Server Konfigurieren 2
+### DNS Server Konfigurieren 2
 1. Im DNS Manager erstelle jetzt einen DNS A Record für deinen Windows Server und deinen Ubuntu Server <br>
 ![arecord](images/arecord.png)
 2. Und teste es, indem man sich gegenseitig pingt <br> Windows Server: `ping ubuntu.sulejmani.local` <br> Linux: `ping winserver.sulejmani.local`
