@@ -35,7 +35,7 @@
 1. VMware Tools installieren, wie in Windows 10 und neustarten.
 
 
-### Fixe IP Verteilen und Hostnamen angeben.
+#### Fixe IP Verteilen und Hostnamen angeben.
 2. Fixe IP in Adapter Optionen einstellen
   - 192.168.100.4
   - 255.255.255.0
@@ -58,7 +58,7 @@
 8. Install
 9. Sobald der Download fertig ist wählen wir "Close"
 
-### DNS Server Konfigurieren 1
+#### DNS Server Konfigurieren 1
 1. Sobald wir dies haben gehen wir in Server Manager in "Tools" und nach DNS <br>
 ![tools](images/tools.png)
 2. Und führe einen rechtsklick auf deinen Windows Server aus <br>
