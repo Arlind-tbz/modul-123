@@ -141,3 +141,12 @@ Der Reverse lookup name sollte etwas wie 100.168.192 sein, unsere Netzwerk ID _r
 2. Windows Client: `nslookup PC-02.sulejmani.local`
 3. Windows Server: `nslookup winserver.sulejmani.local` <br>
 ![nslookupubuntu](images/nslookupubuntu.png)
+
+#### reverse DNS
+In Ubuntu gibt es ein Kommando namens dig, mit diesem kann man vieles herausfinden, in unserem Fall werden wir dies nutzen um die Reverse Lookup Zone zu testen.
+1. `dig -x 192.168.100.1` <br>
+![digubuntu](images/digubuntu.png)
+2. `dig -x 192.168.100.4`<br>
+![digserver](images/digserver.png)
+3. `dig -x 192.168.100.100` <br>
+![digclient](images/digclient.png)
