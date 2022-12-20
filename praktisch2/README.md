@@ -18,6 +18,7 @@
 13. 60 GB, single file
 14. WindowsServer.vmdk
 15. Windows Server CD hinzufügen
+16. Noch einen NIC hinzufügen, auf diesem wird der DNS Server laufen.
 
 ### Normale Windows Server installation
 
@@ -30,6 +31,7 @@
 7. Custom
 8. Ganze Disk auswählen
 9. Nachdem Restart solltest du jetzt ein "sicheres" Passwort eingeben, in meinem Fall: Arlind123!
+10. Jetzt können wir unseren NAT Adapter entfernen
 
 ### DHCP Server einrichten in Windows Server
 
@@ -53,7 +55,7 @@ Hier müssen wir dem Server eine Fixe IP-Adresse vergeben, die in einer Range is
 1. Im Server Manager müssen wir "2. add roles and features" anklicken. <br>
 ![config](images/config.png)
 2. Next
-3. Role Based isntallation
+3. Role Based installation
 4. Next
 5. DNS Auswählen <br>
 ![dns](images/dns.png)
