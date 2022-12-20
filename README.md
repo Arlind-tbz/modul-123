@@ -2,4 +2,4 @@
 
 # Inhaltsverzeichnis
  1. [DHCP in Linux](/praktisch1/)
- 2. [DNS in Winodws](/praktisch2/)
+ 2. [DNS in Widodws](/praktisch2/)
