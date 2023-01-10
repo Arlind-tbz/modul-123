@@ -45,10 +45,9 @@
   - 192.168.100.4 <br>
 Hier müssen wir dem Server eine Fixe IP-Adresse vergeben, die in einer Range ist mit dem anderen Clients. Wichtig ist auch, dass man sich selbst als DNS Server angibt.
 
-
-1. In "View Advanced system settings" > Hostname den Hostnamen einsellen: in meinem Fall WinServer.
+3. In "View Advanced system settings" > Hostname den Hostnamen einsellen: in meinem Fall WinServer.
 <br>
-1. Und Sobald man all diese 3 Schritte erledigt hat sollte man neustarten.
+4. Und Sobald man all diese 3 Schritte erledigt hat sollte man neustarten.
 
 ### DNS Rolle am Windows Server vergeben
 1. Im Server Manager müssen wir "2. add roles and features" anklicken. <br>
