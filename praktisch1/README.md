@@ -1,5 +1,4 @@
 # DHCP Server einrichten in Linux
-
 ## Vorbereitung
 
 1. Ubuntu Server in VMware Workstation installieren.
