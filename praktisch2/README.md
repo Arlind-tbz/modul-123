@@ -47,6 +47,7 @@ Hier müssen wir dem Server eine Fixe IP-Adresse vergeben, die in einer Range is
 
 3. In "View Advanced system settings" > Hostname den Hostnamen einsellen: in meinem Fall WinServer.
 <br>
+
 4. Und Sobald man all diese 3 Schritte erledigt hat sollte man neustarten.
 
 ### DNS Rolle am Windows Server vergeben
