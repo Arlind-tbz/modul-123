@@ -15,7 +15,9 @@ Laden Sie hier diese [Datei](https://tbzedu.sharepoint.com/:u:/s/campus/students
 Pingen Sie bei allen Clients alle und führen Sie gegebenenfalls einen nslookup durch.
 
 Client mit statischer IP
+
 ![client1](images/client1.png)
 
 Client mit DHCP
+
 ![client2](images/client2.png)
