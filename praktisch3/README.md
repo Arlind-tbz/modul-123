@@ -20,9 +20,9 @@ Bevor man etwas auf Linux macht oder installiert, führen Sie zuerst diese zwei 
 
 5. Um das öffentliche Verzeichnis einzurichten, müssen wir `sudo vim /etc/samba/smb.conf` oder `sudo nano /etc/samba/smb.conf` ausführen und dort unsere Konfiguration ergänzen. <br><br>
 
-6. Hier müssen wir unseren Adapter angeben.
-
+6. Hier müssen wir unseren Adapter angeben. <br>
 ![veraenderungen1](images/veraenderung1.png)
+
 7. Mit diesem Eintrag ganz unten in der Datei, geben wir dem Samba Server genug Informationen, um einen File Server zu erstellen.
 ![veraenderungen2](images/veraenderung2.png) <br>
 
