@@ -33,3 +33,15 @@ Beim Web-Server können wir den Web-Server installieren und den Dienst starten.
 ## Testen
 
 Um alles zu testen, sollten wir ein paar statische Clients und einen DHCP Client auswählen und versuchen jedes Subnetz zu pingen, und den DNS-Server zu testen und den Web Server aufzurufen mit dem Webbrowser.
+
+### Ping Test
+
+![pingtest](images/pingtest.png)
+
+### DNS Test
+
+![dnstest](images/dnstest.png)
+
+### Web Test
+
+![webtest](images/webtest.png)
